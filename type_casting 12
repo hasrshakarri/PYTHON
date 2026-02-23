@@ -1,0 +1,26 @@
+length=len("Harsha vardhan")
+print("your name has " +str(length) + " characters")
+new_length=str(length)
+print(type(new_length))
+print(type(length))
+
+
+print(int("10")+int("10"))
+
+print(10+ float("10"))
+
+name="123"
+print(10 + int(name))
+
+
+
+
+
+#assignment
+first_number=input("enter first number: ")
+second_number=input("enter second number: ")
+
+sum=int(first_number) + int(second_number)
+
+print(sum)
+
