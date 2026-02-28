@@ -2,3 +2,7 @@ number=input("enter a two digit number:")
 first_digit=number[2]
 second_digit=number[2]
 print(int(first_digit) + int(second_digit))
+
+
+output:enter a two digit number:123
+6
