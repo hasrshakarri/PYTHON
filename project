@@ -71,3 +71,64 @@ Load remains unaffected.
 If both wind and solar power are set to zero:
 
 The battery alone supplies the load.
+
+
+1. General Behavior of Battery and System
+
+The battery supplies all its power to the load.
+
+When the battery discharges at 60 A, it delivers approximately 28 kW of power.
+
+Therefore, we must understand how wind, solar, and battery sources share power with the load.
+
+2. Grid Controller Mode (g = 1)
+
+Activate the grid controller and run the system.
+
+The grid becomes active.
+
+Power is supplied to the grid after charging the battery.
+
+If PV (solar) power decreases:
+
+The battery slightly discharges.
+
+Power supplied to the grid decreases.
+
+During this time, the grid also interacts with the battery.
+
+If wind power is set to zero:
+
+The grid generates power.
+
+The battery provides slight support.
+
+If solar power is set to zero:
+
+The grid supplies power.
+
+The battery alternates between slight charging and discharging.
+
+3. Grid Disconnection Behavior
+
+When the grid is suddenly disconnected:
+
+The controller’s duty ratio signal does not remain stable immediately.
+
+The system becomes temporarily unbalanced.
+
+This happens because:
+
+Voltage, current, and control loops change suddenly.
+
+The control system requires some time to adjust to the new condition.
+
+During this transition:
+
+The PWM (duty ratio) signal becomes uneven or unstable.
+
+Due to this unbalanced duty signal:
+
+Voltage and current at the PCC (Point of Common Coupling) become unbalanced.
+
+PCC signals appear unstable for a short time.
