@@ -1,0 +1,73 @@
+4. Wind and Solar as Variable Sources
+
+Wind and solar are variable energy sources.
+
+When their output fluctuates:
+
+The battery compensates by discharging.
+
+It ensures continuous power supply.
+
+5. Grid vs Islanding Operation
+
+When the grid is connected:
+
+The grid-connected controller operates.
+
+When the grid is disconnected:
+
+The islanding controller automatically takes over.
+
+Switching between these modes is controlled by a logical switch “g”.
+
+6. Islanding Mode (g = 0)
+
+Run the system in islanding mode.
+
+Initially:
+
+Solar power is constant.
+
+Wind power is slightly varying.
+
+The AC load varies due to an asynchronous machine (ASM):
+
+Starting conditions cause variations in load.
+
+The battery charges due to solar and wind power.
+
+7. Effect of Changing Solar Power
+
+When solar value is set to a higher value (e.g., 500):
+
+PV power decreases.
+
+Battery power increases.
+
+8. Load Behavior
+
+When load is applied:
+
+No change in load voltage and load current is observed.
+
+No change in PCC voltage and current.
+
+This stability is maintained by the battery.
+
+If the battery is absent:
+
+Load voltage would decrease.
+
+9. Effect of Wind Power Changes
+
+If wind power decreases:
+
+Battery power increases.
+
+Load remains unaffected.
+
+10. When Wind and Solar are Zero
+
+If both wind and solar power are set to zero:
+
+The battery alone supplies the load.
